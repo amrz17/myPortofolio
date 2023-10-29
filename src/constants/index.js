@@ -1,9 +1,9 @@
 import { x, gitHub, linkedIn} from "../assets/Icons"
 
 export const navLink = [
-    { to:"/home", label:"Home" },
+    { to:"/", label:"Home" },
     { to:"/projects", label:"Projects"},
-    { to:"/", label:"Blog"},
+    { to:"", label:"Blog"},
     { to:"/about", label:"About"},
     { to:"/contact", label:"Contact"}
 ]

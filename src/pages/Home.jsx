@@ -1,12 +1,11 @@
-import { arrowDown, arrowRight, bars, gitHub } from "../assets/Icons";
+import { arrowDown, arrowRight, gitHub } from "../assets/Icons";
 import { eCommerce, aMer } from "../assets/Images";
-// import { social } from "../constants";
 import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <>
-      <section className="bg-gray-800 flex flex-col pt-16 text-white text-lg font-spaceMono h-100 items-center">
+      <section className="bg-gray-800 flex flex-col pt-20 text-white text-lg font-spaceMono h-100 items-center">
         <div className="flex flex-col items-center gap-10">
           <img
             src={aMer}
@@ -15,27 +14,10 @@ export default function Home() {
             height={30}
             className="rounded-full ring-4 ring-gray-300 hover:ring-white"
           />
-          {/* <ul className="flex flex-row gap-4">
-          {social.map((item) => (
-            <li key={item.label}>
-              <a to={item.to}>
-                <img
-                  src={item.icon}
-                  alt="social media"
-                  width={20}
-                  height={20}
-                />
-              </a>
-            </li>
-          ))}
-        </ul> */}
           <p className="text-2xl mt-2">
             <span className="text-3xl">Hi, I'm</span> <br />
             <strong className="text-4xl">Muhammad aMer</strong>
-            <br /> Full Stack Developer <br />
-            {/* <span className="text-2xl">
-              from <strong className="text-3xl">Indonesia.</strong>
-            </span> */}
+            <br /> <span className="text-xl">a Full Stack Developer </span>
           </p>
         </div>
         <a href="#project" className="flex flex-row justify-start mt-16 gap-2">
@@ -51,13 +33,13 @@ export default function Home() {
       </section>
       <section id="project"
         className="h-150 bg-deepBlue font-spaceMono text-white font-bold rounded-b-large">
-        <h1 className="pt-32 pb-12 pl-5 text-4xl ">Project</h1>
+        <h1 className="pt-28 pb-12 pl-5 text-4xl ">Project</h1>
         <div className="flex flex-col justify-center items-center gap-6">
           <div className="w-80 h-1/2  ">
             <img
               src={eCommerce}
               alt="e-commerce"
-              width={320}
+              width={360}
               className="mb-2"
             />
             <h2 className="text-2xl ">E-commerce</h2>
@@ -86,7 +68,7 @@ export default function Home() {
         </a>
         </div>
       </section>
-      <section id="aboutMe" className="h-screen flex font-spaceMono">
+      <section id="aboutMe" className="h-full flex font-spaceMono mb-12">
         <div className="pt-20 pl-2">
           <h2 className="underline">A Little More About Me</h2>
           <p className="font-extrabold text-4xl mt-2">Halo,Apa Kabar? <br /> I'm <strong className="text-5xl">aMer</strong> a Full Stack Developer who can work with React & Laravel, i'm from <strong className="text-5xl">INDONESIA</strong>.</p>
@@ -96,7 +78,6 @@ export default function Home() {
               <img src={arrowRight} alt="" className="bg-gray-800"/>
             </Link>
         </div>
-        
       </section>
     </>
   );
