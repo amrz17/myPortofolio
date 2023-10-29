@@ -1,26 +1,30 @@
-import { arrowDown, arrowRight, gitHub } from "../assets/Icons";
+import { arrowDown, arrowRight, arrowRight2, gitHub } from "../assets/Icons";
 import { eCommerce, aMer } from "../assets/Images";
 import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <>
-      <section className="bg-gray-800 flex flex-col pt-20 text-white text-lg font-spaceMono h-100 items-center">
-        <div className="flex flex-col items-center gap-10">
+      <section
+        id="home"
+        className="bg-gray-800 flex justify-center flex-col text-white font-spaceMono h-100 items-center md:h-screen "
+      >
+        <div className="flex flex-col items-center gap-10  md:gap-16 ">
           <img
             src={aMer}
             alt="aMer"
             width={180}
             height={30}
-            className="rounded-full ring-4 ring-gray-300 hover:ring-white"
+            className="md:w-80 rounded-full ring-4 ring-gray-300 hover:ring-white"
           />
-          <p className="text-2xl mt-2">
-            <span className="text-3xl">Hi, I'm</span> <br />
-            <strong className="text-4xl">Muhammad aMer</strong>
-            <br /> <span className="text-xl">a Full Stack Developer </span>
+          <p className="mt-2">
+            <span className="text-3xl md:text-4xl">Hi, I'm</span> <br />
+            <strong className="text-4xl md:text-6xl">Muhammad aMer</strong>
+            <br />{" "}
+            <span className="text-xl md:text-2xl">a Full Stack Developer </span>
           </p>
         </div>
-        <a href="#project" className="flex flex-row justify-start mt-16 gap-2">
+        <a href="#project" className="text-gray-100 flex flex-row justify-start mt-16 gap-2 underline hover:underline-offset-4 decoration-white">
           <img
             src={arrowDown}
             alt="arrow-down"
@@ -31,52 +35,100 @@ export default function Home() {
           <p className="text-base">Featured Work</p>
         </a>
       </section>
-      <section id="project"
-        className="h-150 bg-deepBlue font-spaceMono text-white font-bold rounded-b-large">
-        <h1 className="pt-28 pb-12 pl-5 text-4xl ">Project</h1>
-        <div className="flex flex-col justify-center items-center gap-6">
-          <div className="w-80 h-1/2  ">
+      <section
+        id="project"
+        className="h-150 md:h-screen bg-deepBlue font-spaceMono text-white font-bold "
+      >
+        <h1 className="text-gray-100 pt-28 pb-12 md:max-xl:pt-24 2xl:pt-20 xl:pb-10 md:pb-20 pl-5 xl:pl-10 text-4xl md:text-6xl">
+          Project
+        </h1>
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full flex flex-col justify-center items-center">
             <img
               src={eCommerce}
               alt="e-commerce"
               width={360}
-              className="mb-2"
+              className="mb-2 md:w-3/4 "
             />
-            <h2 className="text-2xl ">E-commerce</h2>
-            <p className="text-base">
-              This is chellenge Front End from frontenmentor.io who i solved
-            </p>
-            <div className="mt-2 flex justify-end mr-4 gap-4">
-              <h3 className="text-sm">Code is here</h3>
-              <img src={arrowRight} alt="" width={20} />
-              <img src={gitHub} alt="" width={25} className="" />
+            <div className="text-gray-200 w-3/4 text-left">
+              <h2 className="text-2xl xl:text-4xl">E-commerce</h2>
+              <p className="text-base xl:text-xl ">
+                This is chellenge Front End from frontenmentor.io who i solved
+              </p>
             </div>
-            <Link to="/projects" className="flex flex-row gap-2 text-base mt-8">
-              <p>More Project</p>
-              <img src={arrowRight} alt="" />
+            <Link to="/projects">
+              <div className="w-3/4 mt-2 flex justify-end mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
+                <img src={gitHub} alt="" width={25} className="xl:w-10" />
+              </div>
             </Link>
           </div>
-          <a href="#aboutMe" className="flex flex-row justify-start mt-16 gap-2">
-          <img
-            src={arrowDown}
-            alt="arrow-down"
-            width={23}
-            height={23}
-            className=""
-          />
-          <p className="text-base">Get To Know Me</p>
-        </a>
+          <div className="w-full text-gray-200 md:flex flex-col justify-center items-center hidden">
+            <img
+              src={eCommerce}
+              alt="e-commerce"
+              width={360}
+              className="mb-2 md:w-3/4"
+            />
+            <div className="w-3/4 text-left">
+              <h2 className="text-2xl xl:text-4xl">E-commerce</h2>
+              <p className="text-base xl:text-xl ">
+                This is chellenge Front End from frontenmentor.io who i solved
+              </p>
+            </div>
+            <Link to="/projects">
+              <div className="w-3/4 mt-2 flex justify-end mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
+                <img src={gitHub} alt="" width={25} className="xl:w-10" />
+              </div>
+            </Link>
+          </div>
+        </div>
+        <Link to="/projects">
+          <div className="flex flex-row gap-2  md:gap-4 pl-6 xl:pl-10 mt-8  md:mt-20 xl:mt-6 text-base md:text-3xl xl:text-4xl underline hover:underline-offset-8 decoration-white">
+            <p className="text-gray-100">More Project</p>
+            <img
+              src={arrowRight2}
+              width={23}
+              alt="arrow-right-project-page"
+              className="md:w-8 bg-white"
+            />
+          </div>
+        </Link>
+        <div className="flex justify-center ">
+          <div className="underline hover:underline-offset-2 decoration-white">
+            <a
+              href="#aboutMe"
+              className="flex flex-row justify-start mt-16 xl:mt-8 md:mt-28 lg:mt-10 gap-2"
+            >
+              <img
+                src={arrowDown}
+                alt="arrow-down"
+                width={23}
+                height={23}
+                className="md:w-8"
+              />
+              <p className="text-base">Get To Know Me</p>
+            </a>
+          </div>
         </div>
       </section>
-      <section id="aboutMe" className="h-full flex font-spaceMono mb-12">
-        <div className="pt-20 pl-2">
-          <h2 className="underline">A Little More About Me</h2>
-          <p className="font-extrabold text-4xl mt-2">Halo,Apa Kabar? <br /> I'm <strong className="text-5xl">aMer</strong> a Full Stack Developer who can work with React & Laravel, i'm from <strong className="text-5xl">INDONESIA</strong>.</p>
-          <p className="font-extrabold text-4xl mt-4"> I'm still in College, my skill is STRONG in Front End and I like to LEARN new THING. </p>
-            <Link to="/about" className="flex flex-row gap-2 text-base mt-8">
-              <p className="underline">LEARN MORE</p>
-              <img src={arrowRight} alt="" className="bg-gray-800"/>
-            </Link>
+      <section id="aboutMe" className="h-full md:h-screen flex font-spaceMono mb-12">
+        <div className="pt-24 pl-2 xl:pl-6 md:pt-20 lg:pt-20 xl:pt-32 2xl:pt-28">
+          <h2 className="underline">A Little More <span className="text-2xl">About Me :</span></h2>
+          <p className="font-extrabold text-4xl md:text-6xl 
+          xl:text-7xl mt-2 xl:mt-6">
+            Halo,Apa Kabar? <br /> I'm{" "}
+            <strong className="text-5xl md:text-8xl xl:text-8xl">aMer</strong> a Full Stack Developer
+            who can work with <strong className="md:text-7xl xl:text-8xl">React</strong>  & <strong className="md:text-7xl xl:text-8xl">Laravel</strong>, i'm from
+            <strong className="text-5xl md:text-7xl xl:text-8xl"> INDONESIA</strong>.
+          </p>
+          <p className="font-extrabold text-4xl md:text-6xl xl:text-7xl mt-4 md:mt-0 xl:mt-10">
+            I'm still in College, my skill is STRONG in Front End and I like to
+            <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new <strong className="md:text-7xl xl:text-8xl">THING</strong>.
+          </p>
+          <Link to="/about" className="flex flex-row gap-2 text-base md:text-2xl xl:text-3xl pl-2 mt-8 underline hover:underline-offset-4 ">
+            <p className="">LEARN MORE</p>
+            <img src={arrowRight} alt="" className="bg-gray-800" />
+          </Link>
         </div>
       </section>
     </>

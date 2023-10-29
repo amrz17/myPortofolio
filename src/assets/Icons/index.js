@@ -5,6 +5,8 @@ import gitHub from "./github.svg"
 import linkedIn from "./linkedin.svg"
 import arrowDown from "./arrow-down.svg"
 import arrowRight from "./arrow-right.svg"
+import arrowRight2 from "./arrow-right2.svg"
+import arrowUp from "./arrow-up.svg"
 
 export {
     reactIcon,
@@ -13,5 +15,7 @@ export {
     gitHub,
     linkedIn,
     arrowDown,
-    arrowRight
+    arrowRight,
+    arrowRight2,
+    arrowUp
 }

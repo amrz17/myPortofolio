@@ -7,6 +7,9 @@ export default {
         100: "608px",
         150: "750px"
       },
+      widht : {
+        100: "600px"
+      },
       fontFamily: {
         spaceMono: "Space Mono, monospace",
         poppins: "Poppins, sans-serif"
