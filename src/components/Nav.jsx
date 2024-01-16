@@ -5,8 +5,7 @@ import { useState } from "react";
 import { SideBar } from "./SideBar";
 
 export const Nav = () => {
-
-  const [openMenu, setOpenMenu] = useState(false)
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <header className="bg-gray-800 h-16 py-5 px-8 xl:h-20 w-full xl:py-8 xl:px-20 sm:px-10 sticky top-0 z-10">
@@ -17,27 +16,28 @@ export const Nav = () => {
           </Link>
         </div>
         <div>
-          <button onClick={(e) => {e.preventDefault(); setOpenMenu ((prev) => !prev)}}>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setOpenMenu((prev) => !prev);
+            }}
+          >
             <img src={bars} alt="Icon Menu" width={20} className=" md:hidden" />
           </button>
         </div>
         <ul className="text-white md:text-xl text-lg gap-12 hidden md:flex sm:gap-8 p-1">
           {navLink.map((item) => (
-            <li className="active:underline hover:underline underline-offset-8 decoration-4" key={item.label}>
-              <Link to={item.to}>
-                {item.label}
-              </Link>
+            <li
+              className="active:underline hover:underline underline-offset-8 decoration-4"
+              key={item.label}
+            >
+              <Link to={item.to}>{item.label}</Link>
             </li>
           ))}
         </ul>
       </nav>
-      <hr className="mt-2"/>
-      {
-      openMenu && <SideBar />
-      }
-
-      
+      <hr className="mt-2" />
+      {openMenu && <SideBar />}
     </header>
   );
-}
-
+};

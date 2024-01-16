@@ -1,5 +1,11 @@
-import { arrowDown, arrowRight, arrowRight2, gitHub } from "../assets/Icons";
-import { eCommerce, aMer } from "../assets/Images";
+import {
+  arrowDown,
+  arrowRight,
+  arrowRight2,
+  favicon,
+  gitHub,
+} from "../assets/Icons";
+import { eCommerce, aMer, feChallenge } from "../assets/Images";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -18,13 +24,16 @@ export default function Home() {
             className="md:w-80 rounded-full ring-4 ring-gray-300 hover:ring-white"
           />
           <p className="mt-2">
-            <span className="text-3xl md:text-4xl">Hi, I'm</span> <br />
+            <span className="text-3xl md:text-4xl">Hi, I&apos;m</span> <br />
             <strong className="text-4xl md:text-6xl">Muhammad aMer</strong>
             <br />{" "}
             <span className="text-xl md:text-2xl">a Full Stack Developer </span>
           </p>
         </div>
-        <a href="#project" className="text-gray-100 flex flex-row justify-start mt-16 gap-2 underline hover:underline-offset-4 decoration-white">
+        <a
+          href="#project"
+          className="text-gray-100 flex flex-row justify-start mt-16 gap-2 underline hover:underline-offset-4 decoration-white"
+        >
           <img
             src={arrowDown}
             alt="arrow-down"
@@ -45,22 +54,35 @@ export default function Home() {
         <div className="flex flex-col md:flex-row">
           <div className="w-full flex flex-col justify-center items-center">
             <img
-              src={eCommerce}
+              src={feChallenge}
               alt="e-commerce"
               width={360}
               className="mb-2 md:w-3/4 "
             />
             <div className="text-gray-200 w-3/4 text-left">
-              <h2 className="text-2xl xl:text-4xl">E-commerce</h2>
+              <h2 className="text-2xl xl:text-4xl">Frontend Challenge</h2>
               <p className="text-base xl:text-xl ">
                 This is chellenge Front End from frontenmentor.io who i solved
               </p>
             </div>
-            <Link to="/projects">
-              <div className="w-3/4 mt-2 flex justify-end mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
-                <img src={gitHub} alt="" width={25} className="xl:w-10" />
-              </div>
-            </Link>
+            <div className="w-3/4 mt-2 flex justify-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
+              <Link to="https://www.frontendmentor.io/profile/amer48-dev">
+                <img
+                  src={favicon}
+                  alt="frontend.io"
+                  width={25}
+                  className="xl:w-10"
+                />
+              </Link>
+              <Link to="https://github.com/amrz17">
+                <img
+                  src={gitHub}
+                  alt="github link"
+                  width={25}
+                  className="xl:w-10"
+                />
+              </Link>
+            </div>
           </div>
           <div className="w-full text-gray-200 md:flex flex-col justify-center items-center hidden">
             <img
@@ -111,21 +133,39 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="aboutMe" className="h-full md:h-screen flex font-spaceMono mb-12">
+      <section
+        id="aboutMe"
+        className="h-full md:h-screen flex font-spaceMono mb-12"
+      >
         <div className="pt-24 pl-2 xl:pl-6 md:pt-20 lg:pt-20 xl:pt-32 2xl:pt-28">
-          <h2 className="underline">A Little More <span className="text-2xl">About Me :</span></h2>
-          <p className="font-extrabold text-4xl md:text-6xl 
-          xl:text-7xl mt-2 xl:mt-6">
-            Halo,Apa Kabar? <br /> I'm{" "}
-            <strong className="text-5xl md:text-8xl xl:text-8xl">aMer</strong> a Full Stack Developer
-            who can work with <strong className="md:text-7xl xl:text-8xl">React</strong>  & <strong className="md:text-7xl xl:text-8xl">Laravel</strong>, i'm from
-            <strong className="text-5xl md:text-7xl xl:text-8xl"> INDONESIA</strong>.
+          <h2 className="underline">
+            A Little More <span className="text-2xl">About Me :</span>
+          </h2>
+          <p
+            className="font-extrabold text-4xl md:text-6xl 
+          xl:text-7xl mt-2 xl:mt-6"
+          >
+            Halo,Apa Kabar? <br /> I&apos;m
+            <strong className="text-5xl md:text-8xl xl:text-8xl">aMer</strong> a
+            Full Stack Developer who can work with
+            <strong className="md:text-7xl xl:text-8xl">React</strong> &
+            <strong className="md:text-7xl xl:text-8xl">Laravel</strong>,
+            i&apos;m from
+            <strong className="text-5xl md:text-7xl xl:text-8xl">
+              INDONESIA
+            </strong>
+            .
           </p>
           <p className="font-extrabold text-4xl md:text-6xl xl:text-7xl mt-4 md:mt-0 xl:mt-10">
-            I'm still in College, my skill is STRONG in Front End and I like to
-            <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new <strong className="md:text-7xl xl:text-8xl">THING</strong>.
+            i&apos;m from still in College, my skill is STRONG in Front End and
+            I like to
+            <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new
+            <strong className="md:text-7xl xl:text-8xl">THING</strong>.
           </p>
-          <Link to="/about" className="flex flex-row gap-2 text-base md:text-2xl xl:text-3xl pl-2 mt-8 underline hover:underline-offset-4 ">
+          <Link
+            to="/about"
+            className="flex flex-row gap-2 text-base md:text-2xl xl:text-3xl pl-2 mt-8 underline hover:underline-offset-4 "
+          >
             <p className="">LEARN MORE</p>
             <img src={arrowRight} alt="" className="bg-gray-800" />
           </Link>
