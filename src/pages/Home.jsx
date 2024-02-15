@@ -1,10 +1,5 @@
-import {
-  arrowDown,
-  arrowRight,
-  arrowRight2,
-  favicon,
-  gitHub,
-} from "../assets/Icons";
+import { ExternalLink } from "lucide-react";
+import { arrowDown, arrowRight2, favicon, gitHub } from "../assets/Icons";
 import { eCommerce, aMer, feChallenge } from "../assets/Images";
 import { Link } from "react-router-dom";
 
@@ -13,7 +8,8 @@ export default function Home() {
     <>
       <section
         id="home"
-        className="bg-gray-800 flex justify-center flex-col text-white font-spaceMono h-100 items-center md:h-screen "
+        className="bg-gray-800 flex justify-center flex-col text-white font-spaceMono 
+        h-100 items-center md:h-screen "
       >
         <div className="flex flex-col items-center gap-10  md:gap-16 ">
           <img
@@ -66,7 +62,7 @@ export default function Home() {
               </p>
             </div>
             <div className="w-3/4 mt-2 flex justify-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
-              <Link to="https://www.frontendmentor.io/profile/amer48-dev">
+              <Link to="https://www.frontendmentor.io/profile/amrz17">
                 <img
                   src={favicon}
                   alt="frontend.io"
@@ -97,11 +93,19 @@ export default function Home() {
                 This is chellenge Front End from frontenmentor.io who i solved
               </p>
             </div>
-            <Link to="/projects">
-              <div className="w-3/4 mt-2 flex justify-end mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
-                <img src={gitHub} alt="" width={25} className="xl:w-10" />
-              </div>
-            </Link>
+
+            <div className="w-3/4 mt-2 flex justify-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
+              <Link to="https://clothing-store-three.vercel.app/">
+                <div className="p-4">
+                  <ExternalLink />
+                </div>
+              </Link>
+              <Link to="https://github.com/amrz17/chloting-strore">
+                <div className="w-3/4 mt-2 flex justify-end mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
+                  <img src={gitHub} alt="" width={25} className="xl:w-10" />
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
         <Link to="/projects">
@@ -137,7 +141,10 @@ export default function Home() {
         id="aboutMe"
         className="h-full md:h-screen flex font-spaceMono mb-12"
       >
-        <div className="pt-24 pl-2 xl:pl-6 md:pt-20 lg:pt-20 xl:pt-32 2xl:pt-28">
+        <div
+          className="py-24 pl-2 xl:pl-6 md:py-20 lg:py-20 xl:py-32
+          2xl:py-28"
+        >
           <h2 className="underline">
             A Little More <span className="text-2xl">About Me :</span>
           </h2>
@@ -146,7 +153,7 @@ export default function Home() {
           xl:text-7xl mt-2 xl:mt-6"
           >
             Halo,Apa Kabar? <br /> I&apos;m
-            <strong className="text-5xl md:text-8xl xl:text-8xl">aMer</strong> a
+            <strong className="text-5xl md:text-8xl xl:text-8xl">aMer</strong>a
             Full Stack Developer who can work with
             <strong className="md:text-7xl xl:text-8xl">React</strong> &
             <strong className="md:text-7xl xl:text-8xl">Laravel</strong>,
@@ -162,13 +169,6 @@ export default function Home() {
             <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new
             <strong className="md:text-7xl xl:text-8xl">THING</strong>.
           </p>
-          <Link
-            to="/about"
-            className="flex flex-row gap-2 text-base md:text-2xl xl:text-3xl pl-2 mt-8 underline hover:underline-offset-4 "
-          >
-            <p className="">LEARN MORE</p>
-            <img src={arrowRight} alt="" className="bg-gray-800" />
-          </Link>
         </div>
       </section>
     </>

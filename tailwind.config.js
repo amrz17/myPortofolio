@@ -3,16 +3,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      height : {
+      height: {
         100: "608px",
-        150: "750px"
+        150: "750px",
       },
-      widht : {
-        100: "600px"
+      widht: {
+        100: "600px",
       },
       fontFamily: {
         spaceMono: "Space Mono, monospace",
-        poppins: "Poppins, sans-serif"
+        poppins: "Poppins, sans-serif",
       },
       colors: {
         deepBlue: "#252c35",
@@ -22,7 +22,7 @@ export default {
         epsor: "#003290",
         telio: "#252525",
         egg: "#A5D7E8",
-        2: "#576CBC"
+        2: "#576CBC",
       },
       textUnderlineOffset: {
         10: "18px",
@@ -31,10 +31,9 @@ export default {
         6: "6px",
       },
       borderRadius: {
-        large: "50px"
-      }
+        large: "50px",
+      },
     },
   },
   plugins: [],
 };
-
