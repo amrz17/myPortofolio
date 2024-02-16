@@ -123,7 +123,7 @@ export default function Home() {
           <div className="underline hover:underline-offset-2 decoration-white">
             <a
               href="#aboutMe"
-              className="flex flex-row justify-start mt-16 xl:mt-8 md:mt-28 lg:mt-10 gap-2"
+              className="flex flex-row justify-start mt-16 xl:mt-6 md:mt-28 lg:mt-10 gap-2"
             >
               <img
                 src={arrowDown}
@@ -142,7 +142,7 @@ export default function Home() {
         className="h-full md:h-screen flex font-spaceMono mb-12"
       >
         <div
-          className="py-24 pl-2 xl:pl-6 md:py-20 lg:py-20 xl:py-32
+          className="py-24 pl-2 xl:pl-6 md:py-20 lg:py-20
           2xl:py-28"
         >
           <h2 className="underline">
@@ -153,21 +153,25 @@ export default function Home() {
           xl:text-7xl mt-2 xl:mt-6"
           >
             Halo,Apa Kabar? <br /> I&apos;m
-            <strong className="text-5xl md:text-8xl xl:text-8xl">aMer</strong>a
-            Full Stack Developer who can work with
-            <strong className="md:text-7xl xl:text-8xl">React</strong> &
-            <strong className="md:text-7xl xl:text-8xl">Laravel</strong>,
+            <strong className="text-5xl md:text-8xl xl:text-8xl">
+              {" "}
+              aMer
+            </strong>{" "}
+            a Full Stack Developer who can work with
+            <strong className="md:text-7xl xl:text-8xl"> React</strong> &
+            <strong className="md:text-7xl xl:text-8xl"> Laravel</strong>,
             i&apos;m from
             <strong className="text-5xl md:text-7xl xl:text-8xl">
+              <br />
               INDONESIA
             </strong>
             .
           </p>
           <p className="font-extrabold text-4xl md:text-6xl xl:text-7xl mt-4 md:mt-0 xl:mt-10">
-            i&apos;m from still in College, my skill is STRONG in Front End and
-            I like to
+            i&apos;m still in College, my skill is STRONG in Front End and I
+            like to
             <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new
-            <strong className="md:text-7xl xl:text-8xl">THING</strong>.
+            <strong className="md:text-7xl xl:text-8xl"> THING</strong>.
           </p>
         </div>
       </section>

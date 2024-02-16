@@ -4,14 +4,18 @@ import { eCommerce, feChallenge } from "../assets/Images";
 export const navLink = [
   { to: "/", label: "Home" },
   { to: "/projects", label: "Projects" },
-  { to: "", label: "Blog" },
+  { to: "/blog", label: "Blog" },
   { to: "/contact", label: "Contact" },
 ];
 
 export const social = [
   { to: "https://twitter.com/aMr6443", icon: x, label: "x" },
   { to: "https://github.com/amrz17", icon: gitHub, label: "github" },
-  { to: "/", icon: linkedIn, label: "linkedin" },
+  {
+    to: "https://www.linkedin.com/in/muhammad-amer-9899832b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    icon: linkedIn,
+    label: "linkedin",
+  },
 ];
 
 export const projects = [
