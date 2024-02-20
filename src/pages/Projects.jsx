@@ -1,19 +1,23 @@
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { projects } from "../constants";
 import { ExternalLink } from "lucide-react";
 
 export default function Projects() {
   return (
-    <div className="bg-deepBlue flex flex-col pb-8 lg:pb-16">
-      <div className="mt-4 ml-4 lg:mt-14 lg:ml-36">
-        <h1 className="text-white text-3xl xl:text-6xl font-bold font-spaceMono">
-          Projects that i <br /> have
-          <span className="text-green-400"> Completed</span>
-        </h1>
-      </div>
-      {projects.map((project) => (
-        <>
-          <div
+    <>
+      <Nav />
+      <div className="bg-deepBlue flex flex-col pb-8 lg:pb-16">
+        <div className="mt-4 ml-4 lg:mt-14 lg:ml-36">
+          <h1 className="text-white text-3xl lg:text-6xl font-bold font-spaceMono">
+            Projects that i <br /> have
+            <span className="text-green-400"> Completed</span>
+          </h1>
+        </div>
+        {projects.map((project) => (
+          <ul
+            key={project.title}
             className="flex flex-col lg:flex-row gap-y-4 lg:gap-20 mx-2 
             lg:mx-auto mt-6 lg:mt-16  "
           >
@@ -51,9 +55,10 @@ export default function Projects() {
                 </Link>
               </div>
             </div>
-          </div>
-        </>
-      ))}
-    </div>
+          </ul>
+        ))}
+      </div>
+      <Footer />
+    </>
   );
 }

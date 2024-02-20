@@ -20,7 +20,7 @@ export default function Footer() {
             <ul className="flex flex-row gap-4">
               {social.map((item) => (
                 <li key={item.label}>
-                  <Link to={item.to}>
+                  <Link to={item.to} target="_blank">
                     <img
                       src={item.icon}
                       alt="social media"

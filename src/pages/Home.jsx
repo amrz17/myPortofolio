@@ -1,3 +1,5 @@
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 import { ExternalLink } from "lucide-react";
 import { arrowDown, arrowRight2, favicon, gitHub } from "../assets/Icons";
 import { eCommerce, aMer, feChallenge } from "../assets/Images";
@@ -6,6 +8,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
+      <Nav />
       <section
         id="home"
         className="bg-gray-800 flex justify-center flex-col text-white font-spaceMono 
@@ -62,7 +65,10 @@ export default function Home() {
               </p>
             </div>
             <div className="w-3/4 mt-2 flex justify-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
-              <Link to="https://www.frontendmentor.io/profile/amrz17">
+              <Link
+                to="https://www.frontendmentor.io/profile/amrz17"
+                target="_blank"
+              >
                 <img
                   src={favicon}
                   alt="frontend.io"
@@ -70,7 +76,7 @@ export default function Home() {
                   className="xl:w-10"
                 />
               </Link>
-              <Link to="https://github.com/amrz17">
+              <Link to="https://github.com/amrz17" target="_blank">
                 <img
                   src={gitHub}
                   alt="github link"
@@ -95,12 +101,18 @@ export default function Home() {
             </div>
 
             <div className="w-3/4 mt-2 flex justify-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
-              <Link to="https://clothing-store-three.vercel.app/">
+              <Link
+                to="https://clothing-store-three.vercel.app/"
+                target="_blank"
+              >
                 <div className="p-4">
                   <ExternalLink />
                 </div>
               </Link>
-              <Link to="https://github.com/amrz17/chloting-strore">
+              <Link
+                to="https://github.com/amrz17/chloting-strore"
+                target="_blank"
+              >
                 <div className="w-3/4 mt-2 flex justify-end mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
                   <img src={gitHub} alt="" width={25} className="xl:w-10" />
                 </div>
@@ -175,6 +187,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -23,6 +23,7 @@ export default {
         telio: "#252525",
         egg: "#A5D7E8",
         2: "#576CBC",
+        danger: "#C70039",
       },
       textUnderlineOffset: {
         10: "18px",
