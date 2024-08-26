@@ -19,6 +19,6 @@ export {
   arrowRight,
   arrowRight2,
   arrowUp,
-  favicon,
+  favicon
 };
 
