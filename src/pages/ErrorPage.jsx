@@ -1,5 +1,5 @@
 import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 export function ErrorPage() {
   return (
@@ -30,6 +30,7 @@ export function ErrorPage() {
       >
         Error <span className="text-white bg-danger p-2">404</span> <br />
       </h1>
+      <ScrollRestoration />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { x, gitHub, linkedIn } from "../assets/Icons";
-import { eCommerce, feChallenge } from "../assets/Images";
+import { desktop, eCommerce, feChallenge } from "../assets/Images";
 
 export const navLink = [
   { to: "/", label: "Home" },
@@ -19,6 +19,15 @@ export const social = [
 ];
 
 export const projects = [
+  {
+    title: "Profile of Sekarwangi",
+    img: desktop,
+    area: "Web Development",
+    desc: "This is Website Profile Village Of Sekarwangi Karawang",
+    imgGit: gitHub,
+    linkWeb: "https://www.sekarwangikrw.com",
+    linkGit: "https://github.com/amrz17/Profile-Sekarwangi-Krw",
+  },
   {
     title: "Frontend Challenge",
     img: feChallenge,

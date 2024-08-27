@@ -1,9 +1,8 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { ExternalLink } from "lucide-react";
-import { arrowDown, arrowRight2, favicon, gitHub } from "../assets/Icons";
-import { eCommerce, aMer, feChallenge } from "../assets/Images";
-import { Link } from "react-router-dom";
+import { arrowDown, arrowRight2, externalLink, gitHub } from "../assets/Icons";
+import { eCommerce, aMer, desktop } from "../assets/Images";
+import { Link, ScrollRestoration } from "react-router-dom";
 import { Reveal } from "../components/Reveal";
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
       <section
         id="home"
         className="bg-gray-800 flex justify-center flex-col text-white font-spaceMono 
-        h-100 items-center md:h-screen "
+        h-100 items-center md:h-screen"
       >
         <div className="flex flex-col items-center gap-10  md:gap-16 ">
           <img
@@ -23,78 +22,82 @@ export default function Home() {
             height={30}
             className="md:w-80 rounded-full ring-4 ring-gray-300 hover:ring-white"
           />
-            <div >
-              <Reveal>
-              <p className="text-3xl md:text-4xl">Hi, I&apos;m</p> 
-              </Reveal>
-              <Reveal>
+          <div>
+            <Reveal>
+              <p className="text-3xl md:text-4xl">Hi, I&apos;m</p>
+            </Reveal>
+            <Reveal>
               <strong className="text-4xl md:text-6xl">Muhammad aMer</strong>
-              </Reveal>
-              <Reveal>
+            </Reveal>
+            <Reveal>
               <p className="text-xl md:text-2xl">a Full Stack Developer </p>
-              </Reveal>
-            </div>
+            </Reveal>
+          </div>
         </div>
-          <a
-            href="#project"
-            className="text-gray-100 flex flex-row justify-start mt-16 gap-2 underline hover:underline-offset-4 decoration-white"
-          >
-            <Reveal>
-              <img
-                src={arrowDown}
-                alt="arrow-down"
-                width={23}
-                height={23}
-                className=""
-              />
-            </Reveal>
-            <Reveal>
-              <p className="text-base">Featured Work</p>
-            </Reveal>
-          </a>
+        <a
+          href="#project"
+          className="text-gray-100 flex flex-row justify-start mt-16 gap-2 underline hover:underline-offset-4 decoration-white"
+        >
+          <Reveal>
+            <img
+              src={arrowDown}
+              alt="arrow-down"
+              width={23}
+              height={23}
+              className=""
+            />
+          </Reveal>
+          <Reveal>
+            <p className="text-base">Featured Work</p>
+          </Reveal>
+        </a>
       </section>
       <section
         id="project"
         className="h-150 md:h-screen bg-deepBlue font-spaceMono text-white font-bold"
       >
         <h1 className="text-gray-100 pt-28 pb-12 md:max-xl:pt-24 2xl:pt-20 xl:pb-10 md:pb-20 pl-5 xl:pl-10 text-4xl md:text-6xl">
-            Projects
+          Projects
         </h1>
         <div className="flex flex-col md:flex-row">
           <div className="w-full flex flex-col justify-center items-center md:mb-7 xl:mb-0">
             <Reveal>
               <img
-                src={feChallenge}
-                alt="e-commerce"
+                src={desktop}
+                alt="Profil Desa"
                 width={360}
                 className="mb-2 md:w-3/4 mx-auto"
               />
             </Reveal>
             <div className="text-gray-200 w-3/4 text-left">
               <Reveal>
-                <h2 className="text-2xl xl:text-4xl">Frontend Challenge</h2>
+                <h2 className="text-2xl xl:text-4xl">
+                  Profile Of Sekarwangi Village Karawang
+                </h2>
               </Reveal>
               <Reveal>
                 <p className="text-base xl:text-xl ">
-                  This is chellenge Front End from frontenmentor.io who i solved
+                  This is Website Profile Village Of Sekarwangi Karawang
                 </p>
               </Reveal>
             </div>
             <div className="w-3/4 mt-2 flex justify-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
+              <Link to="https://www.sekarwangikrw.com" target="_blank">
+                <div>
+                  <Reveal>
+                    <img
+                      src={externalLink}
+                      alt="external link"
+                      width={25}
+                      className="xl:w-10 text-white"
+                    />
+                  </Reveal>
+                </div>
+              </Link>
               <Link
-                to="https://www.frontendmentor.io/profile/amrz17"
+                to="https://github.com/amrz17/Profile-Sekarwangi-Krw"
                 target="_blank"
               >
-                <Reveal>
-                  <img
-                    src={favicon}
-                    alt="frontend.io"
-                    width={25}
-                    className="xl:w-10"
-                  />
-                </Reveal>
-              </Link>
-              <Link to="https://github.com/amrz17" target="_blank">
                 <Reveal>
                   <img
                     src={gitHub}
@@ -126,14 +129,19 @@ export default function Home() {
               </Reveal>
             </div>
 
-            <div className="w-3/4 mt-2 flex justify-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
+            <div className="w-3/4 mt-2 flex justify-center items-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
               <Link
                 to="https://clothing-store-three.vercel.app/"
                 target="_blank"
               >
-                <div className="p-4">
+                <div>
                   <Reveal>
-                    <ExternalLink />
+                    <img
+                      src={externalLink}
+                      alt="external link"
+                      width={25}
+                      className="xl:w-10 text-white"
+                    />
                   </Reveal>
                 </div>
               </Link>
@@ -141,7 +149,7 @@ export default function Home() {
                 to="https://github.com/amrz17/chloting-strore"
                 target="_blank"
               >
-                <div className="w-3/4 mt-2 flex justify-end mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
+                <div className="w-3/4 flex justify-end mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
                   <Reveal>
                     <img src={gitHub} alt="" width={25} className="xl:w-10" />
                   </Reveal>
@@ -204,15 +212,20 @@ export default function Home() {
             className="font-extrabold text-4xl md:text-6xl 
           xl:text-7xl mt-2 xl:mt-6"
           >
-            <Reveal>Halo,Apa Kabar?</Reveal> <Reveal>I&apos;m
-            <strong className="text-5xl md:text-8xl xl:text-8xl">
-              {" "}
-              aMer
-            </strong>{" "}</Reveal> 
+            <Reveal>Halo,Apa Kabar?</Reveal>{" "}
+            <Reveal>
+              I&apos;m
+              <strong className="text-5xl md:text-8xl xl:text-8xl">
+                {" "}
+                aMer
+              </strong>{" "}
+            </Reveal>
             <Reveal>a Full Stack Developer who can work with</Reveal>
-            <Reveal><strong className="md:text-7xl xl:text-8xl"> React</strong> &
-            <strong className="md:text-7xl xl:text-8xl"> Laravel</strong>,
-            i&apos;m from</Reveal>
+            <Reveal>
+              <strong className="md:text-7xl xl:text-8xl"> React</strong> &
+              <strong className="md:text-7xl xl:text-8xl"> Laravel</strong>,
+              i&apos;m from
+            </Reveal>
             <Reveal>
               <strong className="text-5xl md:text-7xl xl:text-8xl">
                 INDONESIA.
@@ -220,18 +233,18 @@ export default function Home() {
             </Reveal>
           </div>
           <div className="font-extrabold text-4xl md:text-6xl xl:text-7xl mt-4 md:mt-0 xl:mt-10">
-            <Reveal>
-            I&apos;m still in College, my skill</Reveal> 
+            <Reveal>I&apos;m still in College, my skill</Reveal>
             <Reveal>is STRONG in Front End and I</Reveal>
             <Reveal>
-            like to 
-            <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new
-            <strong className="md:text-7xl xl:text-8xl"> THING</strong>.
+              like to
+              <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new
+              <strong className="md:text-7xl xl:text-8xl"> THING</strong>.
             </Reveal>
           </div>
         </div>
       </section>
       <Footer />
+      <ScrollRestoration />
     </>
   );
 }

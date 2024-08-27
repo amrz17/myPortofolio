@@ -8,6 +8,8 @@ import arrowRight from "./arrow-right.svg";
 import arrowRight2 from "./arrow-right2.svg";
 import arrowUp from "./arrow-up.svg";
 import favicon from "./favicon-32x32.png";
+import userCheck from "./userCheck.svg";
+import externalLink from "./externalLink.svg";
 
 export {
   reactIcon,
@@ -19,6 +21,7 @@ export {
   arrowRight,
   arrowRight2,
   arrowUp,
-  favicon
+  favicon,
+  userCheck,
+  externalLink,
 };
-

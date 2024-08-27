@@ -1,6 +1,6 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 import { projects } from "../constants";
 import { ExternalLink } from "lucide-react";
 import { Reveal } from "../components/Reveal";
@@ -12,10 +12,9 @@ export default function Projects() {
       <div className="bg-deepBlue flex flex-col pb-8 lg:pb-16">
         <div className="mt-4 ml-4 lg:mt-14 lg:ml-36 ">
           <h1 className="text-white text-3xl lg:text-6xl font-bold font-spaceMono">
+            <Reveal>Projects that i</Reveal>
             <Reveal>
-              Projects that i 
-            </Reveal>
-            <Reveal>have
+              have
               <span className="text-green-400"> Completed</span>
             </Reveal>
           </h1>
@@ -75,6 +74,7 @@ export default function Projects() {
         ))}
       </div>
       <Footer />
+      <ScrollRestoration />
     </>
   );
 }
