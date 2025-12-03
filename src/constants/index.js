@@ -1,5 +1,5 @@
 import { x, gitHub, linkedIn } from "../assets/Icons";
-import { desktop, eCommerce, feChallenge } from "../assets/Images";
+import { desktop, eCommerce, feChallenge, vehicleMatching, monitoringMachines } from "../assets/Images";
 
 export const navLink = [
   { to: "/", label: "Home" },
@@ -20,6 +20,24 @@ export const social = [
 
 export const projects = [
   {
+    title: "Vehicle Plate and Image Matching",
+    img: vehicleMatching,
+    area: "Computer Vision",
+    desc: "This is Website Profile Village Of Sekarwangi Karawang",
+    imgGit: gitHub,
+    linkWeb: "",
+    linkGit: "",
+  },
+  {
+    title: "Monitoring Machine Counter With IoT",
+    img: monitoringMachines,
+    area: "IoT and Web Development",
+    desc: "This is Website Profile Village Of Sekarwangi Karawang",
+    imgGit: gitHub,
+    linkWeb: "",
+    linkGit: "",
+  },
+  {
     title: "Profile of Sekarwangi",
     img: desktop,
     area: "Web Development",
@@ -37,7 +55,6 @@ export const projects = [
     linkWeb: "https://www.frontendmentor.io/profile/amrz17/solutions",
     linkGit: "https://github.com/amrz17",
   },
-
   {
     title: "E-commerce",
     img: eCommerce,

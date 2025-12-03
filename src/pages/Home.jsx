@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import Text from "../components/Text"
 import Footer from "../components/Footer";
 import { arrowDown, arrowRight2, externalLink, gitHub } from "../assets/Icons";
 import { eCommerce, aMer, desktop } from "../assets/Images";
@@ -28,9 +29,7 @@ export default function Home() {
             </Reveal>
             <Reveal>
               <strong className="text-4xl md:text-6xl">Muhammad aMer</strong>
-            </Reveal>
-            <Reveal>
-              <p className="text-xl md:text-2xl">a Full Stack Developer </p>
+               <Text />
             </Reveal>
           </div>
         </div>
@@ -233,8 +232,8 @@ export default function Home() {
             </Reveal>
           </div>
           <div className="font-extrabold text-4xl md:text-6xl xl:text-7xl mt-4 md:mt-0 xl:mt-10">
-            <Reveal>I&apos;m still in College, my skill</Reveal>
-            <Reveal>is STRONG in Front End and I</Reveal>
+            <Reveal>I&apos;m computer science graduate, my skill</Reveal>
+            <Reveal>is STRONG in Web Developer, Ai, IoT and I</Reveal>
             <Reveal>
               like to
               <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new
