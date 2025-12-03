@@ -2,7 +2,7 @@ import Nav from "../components/Nav";
 import Text from "../components/Text"
 import Footer from "../components/Footer";
 import { arrowDown, arrowRight2, externalLink, gitHub } from "../assets/Icons";
-import { eCommerce, aMer, desktop } from "../assets/Images";
+import { eCommerce, aMer, desktop, vehicleMatching, monitoringMachines } from "../assets/Images";
 import { Link, ScrollRestoration } from "react-router-dom";
 import { Reveal } from "../components/Reveal";
 
@@ -29,7 +29,7 @@ export default function Home() {
             </Reveal>
             <Reveal>
               <strong className="text-4xl md:text-6xl">Muhammad aMer</strong>
-               <Text />
+              <Text />
             </Reveal>
           </div>
         </div>
@@ -55,14 +55,14 @@ export default function Home() {
         id="project"
         className="h-150 md:h-screen bg-deepBlue font-spaceMono text-white font-bold"
       >
-        <h1 className="text-gray-100 pt-28 pb-12 md:max-xl:pt-24 2xl:pt-20 xl:pb-10 md:pb-20 pl-5 xl:pl-10 text-4xl md:text-6xl">
+        <h1 className="text-gray-100 pt-20 pb-4 md:max-xl:pt-24 2xl:pt-20 xl:pb-10 md:pb-20 pl-5 xl:pl-10 text-4xl md:text-6xl">
           Projects
         </h1>
         <div className="flex flex-col md:flex-row">
           <div className="w-full flex flex-col justify-center items-center md:mb-7 xl:mb-0">
             <Reveal>
               <img
-                src={desktop}
+                src={vehicleMatching}
                 alt="Profil Desa"
                 width={360}
                 className="mb-2 md:w-3/4 mx-auto"
@@ -71,12 +71,12 @@ export default function Home() {
             <div className="text-gray-200 w-3/4 text-left">
               <Reveal>
                 <h2 className="text-2xl xl:text-4xl">
-                  Profile Of Sekarwangi Village Karawang
+                  Vehicle Inspection
                 </h2>
               </Reveal>
               <Reveal>
                 <p className="text-base xl:text-xl ">
-                  This is Website Profile Village Of Sekarwangi Karawang
+                    A system that combines license plate detection using OCR and vehicle image matching using YOLOv8 and ResNet50 to automatically verify vehicle identity using computer vision
                 </p>
               </Reveal>
             </div>
@@ -111,7 +111,7 @@ export default function Home() {
           <div className="w-full text-gray-200 md:flex flex-col justify-center items-center hidden">
             <Reveal>
               <img
-                src={eCommerce}
+                src={monitoringMachines}
                 alt="e-commerce"
                 width={360}
                 className="mb-2 md:w-3/4 mx-auto"
@@ -119,11 +119,13 @@ export default function Home() {
             </Reveal>
             <div className="w-3/4 text-left">
               <Reveal>
-                <h2 className="text-2xl xl:text-4xl">E-commerce</h2>
+                <h2 className="text-2xl xl:text-4xl">
+                  Monitoring Machine Counter"
+                </h2>
               </Reveal>
               <Reveal>
                 <p className="text-base xl:text-xl ">
-                  This is chellenge Front End from frontenmentor.io who i solved
+                  It is a machine counter monitoring system that uses limit switch sensors and digital dashboards to visualize data, track production quantities, and detect potential anomalies
                 </p>
               </Reveal>
             </div>
@@ -196,7 +198,7 @@ export default function Home() {
       </section>
       <section
         id="aboutMe"
-        className="h-full md:h-screen flex font-spaceMono mb-12"
+        className="h-full md:h-screen flex font-spaceMono 2xl:mb-0 xl:mb-[28rem] lg:mb-72 md:mb-36"
       >
         <div
           className="py-24 pl-2 xl:pl-6 md:py-20 lg:py-20
@@ -219,7 +221,7 @@ export default function Home() {
                 aMer
               </strong>{" "}
             </Reveal>
-            <Reveal>a Full Stack Developer who can work with</Reveal>
+            <Reveal>a Software Engineer who can work with</Reveal>
             <Reveal>
               <strong className="md:text-7xl xl:text-8xl"> React</strong> &
               <strong className="md:text-7xl xl:text-8xl"> Laravel</strong>,
@@ -233,9 +235,9 @@ export default function Home() {
           </div>
           <div className="font-extrabold text-4xl md:text-6xl xl:text-7xl mt-4 md:mt-0 xl:mt-10">
             <Reveal>I&apos;m computer science graduate, my skill</Reveal>
-            <Reveal>is STRONG in Web Developer, Ai, IoT and I</Reveal>
+            <Reveal>is STRONG in Full Stack Developer, </Reveal>
             <Reveal>
-              like to
+              Ai, IoT and I like to
               <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new
               <strong className="md:text-7xl xl:text-8xl"> THING</strong>.
             </Reveal>

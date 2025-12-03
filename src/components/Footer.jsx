@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <p className="flex justify-center pb-4 text-center">
               Create By Muhammad Amer <br className="flex lg:hidden" />
-              &copy;Copyright 2024
+              &copy;Copyright 2025
             </p>
           </div>
           <div className="flex justify-center">

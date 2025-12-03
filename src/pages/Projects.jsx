@@ -10,7 +10,7 @@ export default function Projects() {
     <>
       <Nav />
       <div className="bg-deepBlue flex flex-col pb-8 lg:pb-16">
-        <div className="mt-4 ml-4 lg:mt-14 lg:ml-36 ">
+        <div className="mt-4 ml-4 lg:mt-14 lg:ml-36">
           <h1 className="text-white text-3xl lg:text-6xl font-bold font-spaceMono">
             <Reveal>Projects that i</Reveal>
             <Reveal>
@@ -22,17 +22,17 @@ export default function Projects() {
         {projects.map((project) => (
           <ul
             key={project.title}
-            className="flex flex-col lg:flex-row gap-y-4 lg:gap-20 mx-2 
-            lg:mx-auto mt-6 lg:mt-16 md:items-center"
+            className="flex flex-col lg:flex-row gap-y-4 lg:gap-20 
+            mt-6 lg:mt-16 mx-4 md:mx-auto "
           >
-            <div key={project.title} className="flex">
+            <div key={project.title} className="flex items-start">
               <Link to={project.linkWeb}>
                 <Reveal>
-                  <img src={project.img} width={500} alt="Personal Projects" />
+                  <img src={project.img} width={500} alt="Personal Projects" style={{ minHeight: "190.53px" }} />
                 </Reveal>
               </Link>
             </div>
-            <div className="flex flex-col lg:mt-8">
+            <div className="flex flex-col max-w-[645px] m-0">
               <Reveal>
                 <p className="text-gray-300 text-base font-bold">
                   {project.area}
@@ -62,7 +62,7 @@ export default function Projects() {
                   <Link to={project.linkGit}>
                     <img
                       src={project.imgGit}
-                      alt="github link"
+                      // alt="github link"
                       width={25}
                       className="xl:w-10"
                     />

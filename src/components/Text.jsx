@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export default function Text() {
-  const words = ["Software Engineer", "AI Engineer", "IoT Developer"];
+  const words = ["a Software Engineer", "a AI Engineer", "a IoT Developer"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
