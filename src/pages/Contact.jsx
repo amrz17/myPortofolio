@@ -31,7 +31,7 @@ export default function Contact() {
         </Reveal>
         <div className="flex gap-8">
           <Link
-            to="https://drive.google.com/file/d/17_mwPZCX1_S4qSiImsmwVOWe4TdxFFf4/view?usp=sharing"
+            to="https://drive.google.com/file/d/1W2L91K1sr3_YJZREr3IcGHCC08-r4WVV/view?usp=sharing"
             target="_blank"
           >
             <Reveal>

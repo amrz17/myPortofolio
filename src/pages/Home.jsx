@@ -38,13 +38,17 @@ export default function Home() {
           className="text-gray-100 flex flex-row justify-start mt-16 gap-2 underline hover:underline-offset-4 decoration-white"
         >
           <Reveal>
-            <img
-              src={arrowDown}
-              alt="arrow-down"
-              width={23}
-              height={23}
-              className=""
-            />
+            <div 
+              className="animate-bounce md:w-8 rounded-full"
+            >
+              <img
+                src={arrowDown}
+                alt="arrow-down"
+                width={23}
+                height={23}
+              />
+
+            </div>
           </Reveal>
           <Reveal>
             <p className="text-base">Featured Work</p>
@@ -81,7 +85,7 @@ export default function Home() {
               </Reveal>
             </div>
             <div className="w-3/4 mt-2 flex justify-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
-              <Link to="https://www.sekarwangikrw.com" target="_blank">
+              <Link to="https://drive.google.com/file/d/1NJeLy9o2MlCs3COPOrwS0oExxyRvm-qA/view?usp=sharing" target="_blank">
                 <div>
                   <Reveal>
                     <img
@@ -93,7 +97,7 @@ export default function Home() {
                   </Reveal>
                 </div>
               </Link>
-              <Link
+              {/* <Link
                 to="https://github.com/amrz17/Profile-Sekarwangi-Krw"
                 target="_blank"
               >
@@ -105,7 +109,7 @@ export default function Home() {
                     className="xl:w-10"
                   />
                 </Reveal>
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="w-full text-gray-200 md:flex flex-col justify-center items-center hidden">
@@ -132,7 +136,7 @@ export default function Home() {
 
             <div className="w-3/4 mt-2 flex justify-center items-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
               <Link
-                to="https://clothing-store-three.vercel.app/"
+                to="https://drive.google.com/drive/folders/1MWYAtzsB-4-W2J3eKXg8djsmpSN5cGZ8?usp=sharing"
                 target="_blank"
               >
                 <div>
@@ -146,7 +150,7 @@ export default function Home() {
                   </Reveal>
                 </div>
               </Link>
-              <Link
+              {/* <Link
                 to="https://github.com/amrz17/chloting-strore"
                 target="_blank"
               >
@@ -155,7 +159,7 @@ export default function Home() {
                     <img src={gitHub} alt="" width={25} className="xl:w-10" />
                   </Reveal>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -169,7 +173,7 @@ export default function Home() {
                 src={arrowRight2}
                 width={23}
                 alt="arrow-right-project-page"
-                className="md:w-8 bg-white"
+                className="md:w-8 bg-white animate-pulse rounded-full p-1"
               />
             </Reveal>
           </div>
@@ -181,13 +185,18 @@ export default function Home() {
               className="flex flex-row justify-start mt-16 xl:mt-6 md:mt-28 lg:mt-10 gap-2"
             >
               <Reveal>
-                <img
-                  src={arrowDown}
-                  alt="arrow-down"
-                  width={23}
-                  height={23}
-                  className="md:w-8"
-                />
+                <div 
+                  className="animate-bounce md:w-8 rounded-full"
+                >
+                  <img
+                    src={arrowDown}
+                    alt="arrow-down"
+                    width={23}
+                    height={23}
+                    className="md:w-8"
+                  />
+
+                </div>
               </Reveal>
               <Reveal>
                 <p className="text-base">Get To Know Me</p>
