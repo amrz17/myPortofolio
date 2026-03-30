@@ -4,7 +4,7 @@ import { desktop, eCommerce, feChallenge, vehicleMatching, monitoringMachines, m
 export const navLink = [
   { to: "/", label: "Home" },
   { to: "/projects", label: "Projects" },
-  { to: "https://amer-v2.vercel.app/blog", label: "Blog" },
+  { to: "/blog", label: "Blog" },
   { to: "/contact", label: "Contact" },
 ];
 
