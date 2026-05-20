@@ -4,6 +4,7 @@ import { Link, ScrollRestoration } from "react-router-dom";
 import { projects } from "../constants";
 import { ExternalLink } from "lucide-react";
 import { Reveal } from "../components/Reveal";
+import ImageSlider from "../components/ImageSlider";
 
 export default function Projects() {
   return (
@@ -19,62 +20,80 @@ export default function Projects() {
             </Reveal>
           </h1>
         </div>
-        {projects.map((project) => (
-          <ul
-            key={project.title}
-            className="flex flex-col lg:flex-row gap-y-4 lg:gap-20 
-            mt-6 lg:mt-16 mx-4 md:mx-auto "
-          >
-            <div key={project.title} className="flex items-start">
-              <Link to={project.linkWeb}>
+
+        {projects.map((project) => {
+          // Normalise: prefer `imgs` (array), fall back to single `img`
+          const images = project.imgs
+            ? project.imgs
+            : project.img
+            ? [project.img]
+            : [];
+
+          return (
+            <ul
+              key={project.title}
+              className="flex flex-col lg:flex-row gap-y-4 lg:gap-20 mt-6 lg:mt-16 mx-4 md:mx-auto"
+            >
+              {/* ── Image / Slider ── */}
+              <div className="flex items-start">
                 <Reveal>
-                  <img src={project.img} width={500} alt="Personal Projects" style={{ minHeight: "190.53px" }} />
-                </Reveal>
-              </Link>
-            </div>
-            <div className="flex flex-col max-w-[645px] m-0">
-              <Reveal>
-                <p className="text-gray-300 text-base font-bold">
-                  {project.area}
-                </p>
-              </Reveal>
-              <Reveal>
-                <h2 className="text-white text-2xl font-bold xl:text-5xl mt-2">
-                  {project.title}
-                </h2>
-              </Reveal>
-              <Reveal>
-                <p className="text-white text-base xl:text-xl mt-2 xl:mt-4">
-                  {project.desc}
-                </p>
-              </Reveal>
-              <div className="w-3/4 mt-2 flex justify-start items-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
-                <Reveal>
-                  <Link to={project.linkWeb}>
-                    <ExternalLink
-                      alt="frontend.io"
-                      size={35}
-                      className="text-white xl:w-10"
-                    />
-                  </Link>
-                </Reveal>
-                <Reveal>
-                  <Link to={project.linkGit}>
-                    <img
-                      src={project.imgGit}
-                      // alt="github link"
-                      width={25}
-                      className="xl:w-10"
-                    />
-                  </Link>
+                  <ImageSlider
+                    images={images}
+                    alt={project.title}
+                    width={500}
+                    linkTo={project.linkWeb}
+                  />
                 </Reveal>
               </div>
-            </div>
-          </ul>
-        ))}
+
+              {/* ── Project details ── */}
+              <div className="flex flex-col max-w-[645px] m-0">
+                <Reveal>
+                  <p className="text-gray-300 text-base font-bold">
+                    {project.area}
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <h2 className="text-white text-2xl font-bold xl:text-5xl mt-2">
+                    {project.title}
+                  </h2>
+                </Reveal>
+                <Reveal>
+                  <p className="text-white text-base xl:text-xl mt-2 xl:mt-4">
+                    {project.desc}
+                  </p>
+                </Reveal>
+                <div className="w-3/4 mt-2 flex justify-start items-center mr-4 gap-4 underline hover:underline-offset-4 decoration-white">
+                  <Reveal>
+                    <Link to={project.linkWeb}>
+                      <ExternalLink
+                        alt="frontend.io"
+                        size={35}
+                        className="text-white xl:w-10"
+                      />
+                    </Link>
+                  </Reveal>
+                  {project.imgGit && (
+                    <Reveal>
+                      <Link to={project.linkGit}>
+                        <img
+                          src={project.imgGit}
+                          alt="github link"
+                          width={25}
+                          className="xl:w-10"
+                        />
+                      </Link>
+                    </Reveal>
+                  )}
+                </div>
+              </div>
+            </ul>
+          );
+        })}
       </div>
       <Footer />
       <ScrollRestoration />
     </>
   );
 }
+

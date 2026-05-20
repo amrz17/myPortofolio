@@ -5,6 +5,8 @@ import { arrowDown, arrowRight2, externalLink, gitHub } from "../assets/Icons";
 import { eCommerce, aMer, desktop, vehicleMatching, monitoringMachines } from "../assets/Images";
 import { Link, ScrollRestoration } from "react-router-dom";
 import { Reveal } from "../components/Reveal";
+import { projects } from "../constants";
+import ImageSlider from "../components/ImageSlider";
 
 export default function Home() {
   return (
@@ -38,7 +40,7 @@ export default function Home() {
           className="text-gray-100 flex flex-row justify-start mt-16 gap-2 underline hover:underline-offset-4 decoration-white"
         >
           <Reveal>
-            <div 
+            <div
               className="animate-bounce md:w-8 rounded-full"
             >
               <img
@@ -65,10 +67,10 @@ export default function Home() {
         <div className="flex flex-col md:flex-row">
           <div className="w-full flex flex-col justify-center items-center md:mb-7 xl:mb-0">
             <Reveal>
-              <img
-                src={vehicleMatching}
-                alt="Profil Desa"
-                width={360}
+              <ImageSlider
+                images={projects[0].imgs ? projects[0].imgs : [projects[0].img]}
+                alt="Vehicle Inspection"
+                width={500}
                 className="mb-2 md:w-3/4 mx-auto"
               />
             </Reveal>
@@ -80,7 +82,7 @@ export default function Home() {
               </Reveal>
               <Reveal>
                 <p className="text-base xl:text-xl ">
-                    A system that combines license plate detection using OCR and vehicle image matching using YOLOv8 and ResNet50 to automatically verify vehicle identity using computer vision
+                  A system that combines license plate detection using OCR and vehicle image matching using YOLOv8 and ResNet50 to automatically verify vehicle identity using computer vision
                 </p>
               </Reveal>
             </div>
@@ -114,11 +116,11 @@ export default function Home() {
           </div>
           <div className="w-full text-gray-200 md:flex flex-col justify-center items-center hidden">
             <Reveal>
-              <img
-                src={monitoringMachines}
-                alt="e-commerce"
-                width={360}
-                className="mb-2 md:w-3/4 mx-auto"
+              <ImageSlider
+                images={projects[1].imgs ? projects[1].imgs : [projects[1].img]}
+                alt="Monitoring Machine Counter"
+                width={500}
+                className="mb-2 w-full mx-auto flex justify-center"
               />
             </Reveal>
             <div className="w-3/4 text-left">
@@ -185,7 +187,7 @@ export default function Home() {
               className="flex flex-row justify-start mt-16 xl:mt-6 md:mt-28 lg:mt-10 gap-2"
             >
               <Reveal>
-                <div 
+                <div
                   className="animate-bounce md:w-8 rounded-full"
                 >
                   <img

@@ -1,5 +1,23 @@
 import { x, gitHub, linkedIn } from "../assets/Icons";
-import { desktop, eCommerce, feChallenge, vehicleMatching, monitoringMachines, monitoringStockBox, digitalScale, gotTalent } from "../assets/Images";
+import {
+  desktop,
+  feChallenge,
+  vehicleMatching,
+  monitoringStockBox,
+  digitalScale,
+  gotTalent,
+  monitoringProduction1,
+  monitoringProduction2,
+  monitoringProduction3,
+  monitoringProduction4,
+  monitoringProduction5,
+  monitoringProduction6,
+  alertMonitoringProduction,
+  monitoringStock1,
+  monitoringStock2,
+  monitoringStock3,
+  alertMonitoringStock
+} from "../assets/Images";
 
 export const navLink = [
   { to: "/", label: "Home" },
@@ -30,7 +48,15 @@ export const projects = [
   },
   {
     title: "Monitoring Machine Counter",
-    img: monitoringMachines,
+    imgs: [
+      monitoringProduction1,
+      monitoringProduction2,
+      monitoringProduction3,
+      monitoringProduction4,
+      monitoringProduction5,
+      monitoringProduction6,
+      alertMonitoringProduction
+    ],
     area: "IoT and Web Development",
     desc: "A system I built during my internship at PT Kyoraku Blowmolding Indonesia. It is a machine counter monitoring system that uses limit switch sensors and digital dashboards to visualize data, track production quantities, and detect potential anomalies",
     // imgGit: gitHub,
@@ -48,7 +74,7 @@ export const projects = [
   },
   {
     title: "Monitoring Stock Box",
-    img: monitoringStockBox,
+    imgs: [monitoringStock1, monitoringStock2, monitoringStock3, alertMonitoringStock],
     area: "IoT and Web Development",
     desc: "Developed an IoT-based system for stock box monitoring using RFID, integrated with a web-based platform for automatic identification and real-time stock tracking, reducing manual inventory checks and minimizing stock discrepancies",
     // imgGit: gitHub,
