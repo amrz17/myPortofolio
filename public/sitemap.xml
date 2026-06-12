@@ -1,0 +1,8 @@
+export default function sitemap() {
+  return [
+    {
+      url: 'https://m-amer.dev',
+      lastModified: new Date(),
+    },
+  ]
+}
