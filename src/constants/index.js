@@ -1,4 +1,4 @@
-import { x, gitHub, linkedIn } from "../assets/Icons";
+import { x, gitHub, linkedIn, ig } from "../assets/Icons";
 import {
   desktop,
   feChallenge,
@@ -27,10 +27,11 @@ export const navLink = [
 ];
 
 export const social = [
-  { to: "https://twitter.com/aMr6443", icon: x, label: "x" },
+  { to: "https://x.com/kHunEdan100", icon: x, label: "x" },
+  { to: "https://instagram.com/je0_0s", icon: ig, label: "instagram" },
   { to: "https://github.com/amrz17", icon: gitHub, label: "github" },
   {
-    to: "https://www.linkedin.com/in/muhammad-amer-486b481b1",
+    to: "https://www.linkedin.com/in/muh-amer",
     icon: linkedIn,
     label: "linkedin",
   },

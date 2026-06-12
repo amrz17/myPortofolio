@@ -209,7 +209,7 @@ export default function Home() {
       </section>
       <section
         id="aboutMe"
-        className="h-full md:h-screen flex font-spaceMono 2xl:mb-0 xl:mb-[28rem] lg:mb-72 md:mb-36"
+        className="h-full md:h-screen flex font-spaceMono 2xl:mb-[6rem] xl:mb-44 lg:mb-12 md:mb-32"
       >
         <div
           className="py-24 pl-2 xl:pl-6 md:py-20 lg:py-20
@@ -229,22 +229,40 @@ export default function Home() {
               I&apos;m
               <strong className="text-5xl md:text-8xl xl:text-8xl">
                 {" "}
-                aMer
+                amer
               </strong>{" "}
-            </Reveal>
-            <Reveal>a Software Engineer who can work with</Reveal>
-            <Reveal>
-              <strong className="md:text-7xl xl:text-8xl"> React</strong> &
-              <strong className="md:text-7xl xl:text-8xl"> Laravel</strong>,
-              i&apos;m from
+              a
             </Reveal>
             <Reveal>
+              Software Engineer passionate about{" "}
+              {/* <strong className="text-5xl md:text-6xl xl:text-8xl"> */}
+              Technology,
+              <br />
+              Problem Solving,
+              <br />
+              {/* </strong> */}
+              and {" "}
+              {/* <strong className="text-5xl md:text-6xl xl:text-8xl"> */}
+              Creating Products
+              {/* </strong> */}
+              {" "}
+              <br />
+              that deliver real value to users. My skill
+            </Reveal>
+            {/* <Reveal>
+              Based in {" "}
               <strong className="text-5xl md:text-7xl xl:text-8xl">
                 INDONESIA.
               </strong>
+            </Reveal> */}
+            <Reveal>is STRONG in Full Stack Developer, </Reveal>
+            <Reveal>
+              AI, IoT and I like to
+              <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new
+              <strong className="md:text-7xl xl:text-8xl"> THING</strong>.
             </Reveal>
           </div>
-          <div className="font-extrabold text-4xl md:text-6xl xl:text-7xl mt-4 md:mt-0 xl:mt-10">
+          {/* <div className="font-extrabold text-4xl md:text-6xl xl:text-7xl mt-4 md:mt-0 xl:mt-10">
             <Reveal>I&apos;m computer science graduate, my skill</Reveal>
             <Reveal>is STRONG in Full Stack Developer, </Reveal>
             <Reveal>
@@ -252,7 +270,7 @@ export default function Home() {
               <strong className="md:text-7xl xl:text-8xl"> LEARN</strong> new
               <strong className="md:text-7xl xl:text-8xl"> THING</strong>.
             </Reveal>
-          </div>
+          </div> */}
         </div>
       </section>
       <Footer />

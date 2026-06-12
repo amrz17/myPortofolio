@@ -10,11 +10,13 @@ import arrowUp from "./arrow-up.svg";
 import favicon from "./favicon-32x32.png";
 import userCheck from "./userCheck.svg";
 import externalLink from "./externalLink.svg";
+import ig from "./ig.svg";
 
 export {
   reactIcon,
   bars,
   x,
+  ig,
   gitHub,
   linkedIn,
   arrowDown,

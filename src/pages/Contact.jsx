@@ -26,12 +26,12 @@ export default function Contact() {
         <Reveal>
           <p className="text-center text-base lg:text-xl">
             If you are looking to hire me <br /> i&apos;m currently available
-            for fulltime and freelance work
+            for freelance work
           </p>
         </Reveal>
         <div className="flex gap-8">
           <Link
-            to="https://drive.google.com/file/d/1W2L91K1sr3_YJZREr3IcGHCC08-r4WVV/view?usp=sharing"
+            to="https://drive.google.com/file/d/1eQoGTREaoMwMwakb2icC8q62DGRriBp7/view?usp=sharing"
             target="_blank"
           >
             <Reveal>
